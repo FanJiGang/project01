@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的网站</title>
+    <script>
+        var shi=document.getElementById("tr1");
+        console.log(shi);
+        window.onload=function(){
+            document.getElementById("tr1").onclick=function (ev) {
+                alert(this);
+                console.log(ev);
+            }
+            var rows=document.getElementById("tab2").rows;
+            for (var i = 0; i < rows.length; i++) {
+                if(i % 2 == 0){
+                    rows[i].bgColor="red";
+                }else{
+                    rows[i].bgColor="yellow";
+                }
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <table id="tab" border="1px" width="400px" align="center" cellspacing="0">
+        <tr align="center" id="tr1">
+            <td>11</td>
+            <td rowspan="2" colspan="2">
+                <table border="1px" width="100%" align="center" cellspacing="0">
+                    <tr>
+                        <td>12-11</td>
+                        <td>12-12</td>
+                    </tr>
+                    <tr>
+                        <td>12-21</td>
+                        <td>12-22</td>
+                    </tr>
+                </table>
+            </td>
+            <td>14</td>
+        </tr>
+        <tr align="center">
+            <td>21</td>
+            <td>24</td>
+        </tr>
+        <tr align="center">
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+            <td>34</td>
+        </tr>
+    </table>
+
+    <h3>标题1</h3>
+    <p><font color="red" size="4" face="宋体"><b><i>我</i></b></font>是一个粉刷匠,</p>
+    <p>粉刷本领强,</p>
+    <p>我还有一只小毛驴,</p>
+    <p>我从来都不骑,</p>
+    <p>有一天我骑着它去赶集.</p>
+    <img src="../img/a.png" alt="有问题">
+    <ol start="4">
+        <li>有序1</li>
+        <li>有序2</li>
+        <li>有序3</li>
+        <li>有序4</li>
+        <li>有序5</li>
+    </ol>
+    <ul>
+        <li>无序1</li>
+        <li>无序2</li>
+        <li>无序3</li>
+        <li>无序4</li>
+        <li>无序5</li>
+    </ul>
+    <a href="http://www.baidu.com" target="_blank">新打开窗口百度链接</a>
+    <a href="http://www.baidu.com" target="_self">跳转到百度链接</a>
+    <table id="tab2" border="1px" width="400px" align="center">
+        <thead>
+            <tr bgcolor="aqua">
+                <td colspan="4" align="center">表头</td>
+            </tr>
+        </thead>
+        <tbody align="center">
+            <tr bgcolor="#7fffd4">
+                <td>第一行第一列</td>
+                <td rowspan="3">第二列</td>
+                <td>第一行第三列</td>
+                <td>第一行第四列</td>
+            </tr>
+            <tr bgcolor="#7fffd4">
+                <td>第二行第一列</td>
+                <td>第二行第三列</td>
+                <td>第二行第四列</td>
+            </tr>
+            <tr bgcolor="#7fffd4">
+                <td>第三行第一列</td>
+                <td>第三行第三列</td>
+                <td>第三行第四列</td>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr bgcolor="#006400">
+                <td>表尾第一列</td>
+                <td>第尾行第二列</td>
+                <td>第尾行第三列</td>
+                <td>第尾行第四列</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

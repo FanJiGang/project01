@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb01/JavaWeb01.iml" filepath="$PROJECT_DIR$/JavaWeb01/JavaWeb01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module01/Module01.iml" filepath="$PROJECT_DIR$/Module01/Module01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotationDemo/annotationDemo.iml" filepath="$PROJECT_DIR$/annotationDemo/annotationDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/birth/birth.iml" filepath="$PROJECT_DIR$/birth/birth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bootStrap/bootStrap.iml" filepath="$PROJECT_DIR$/bootStrap/bootStrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project01.iml" filepath="$PROJECT_DIR$/project01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxyDemo/proxyDemo.iml" filepath="$PROJECT_DIR$/proxyDemo/proxyDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redisDemo/redisDemo.iml" filepath="$PROJECT_DIR$/redisDemo/redisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01/test01.iml" filepath="$PROJECT_DIR$/test01/test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webBasic/webBasic.iml" filepath="$PROJECT_DIR$/webBasic/webBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml/xml.iml" filepath="$PROJECT_DIR$/xml/xml.iml" />
+    </modules>
+  </component>
+</project>

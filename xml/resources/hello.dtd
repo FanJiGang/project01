@@ -1,0 +1,7 @@
+<!ELEMENT stus (stu)*>
+<!ELEMENT stu (id,name,age,des)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT des (#PCDATA)>
+<!ATTLIST name nick CDATA #IMPLIED>

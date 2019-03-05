@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq</title>
+    <script src="../js/jquery-1.4.2.js"></script>
+    <script>
+        window.onload=function(){
+            /*var d1=document.getElementById("d1");
+            var $d1=$(d1);
+            $d1.click(function(){
+                alert("我被点击了");
+            });*/
+            //d1.style.color="red";
+        }
+        $(function(){
+            var $d1=$("#d1");
+            var d1=$d1[0];
+            d1.style.color="red";
+            /*setTimeout(function () {
+                $("#img1").show();
+                setTimeout(function () {
+                    $("#img1").hide();
+                },3000);
+            },3000);*/
+            var citys=[["连云港","苏州","盐城"],["成都1","成都2","成都3"],["贵阳1","贵阳2","贵阳3"],["杭州1","杭州2","杭州3"]];
+            $("#sheng").change(function(){
+                var val=$(this).val();
+                var obj="";
+                $.each(citys,function(i,es){
+                    if(i==val){
+                        $.each(es,function (j,e) {
+                            obj+="<option>"+e+"</option>";
+                        });
+                    }
+                });
+                $("#shi").empty();
+                $("#shi").append(obj);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p>我是文本内容</p>
+        <select>
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div>
+        <img id="img1" src="../img/a.png" style="display: none"/>
+    </div>
+    <div>
+        <select id="sheng" style="float: left;">
+            <option value="-1" selected>-选择省份-</option>
+            <option value="0" selected>江苏</option>
+            <option value="1" selected>四川</option>
+            <option value="2" selected>贵州</option>
+            <option value="3" selected>浙江</option>
+        </select>
+    </div>
+    <div>
+        <select id="shi" style="float: left;">
+
+        </select>
+    </div>
+    <div style="clear: both">底部</div>
+</body>
+</html>
